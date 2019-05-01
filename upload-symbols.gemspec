@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   s.description = "Fabric/Crashlytics upload-symbols binary as a ruby gem"
   s.authors     = ["Spencer Whyte"]
   s.email       = 'spencerwhyte@gmail.com'
-  s.files       = ['bin/upload-symbols', '/bin/upload-symbols.rb']
+  s.files       = ['bin/upload-symbols-binary', 'bin/upload-symbols']
   s.license     = 'MIT'
-  s.executables << 'upload-symbols.rb'
+  s.executables = ['upload-symbols']
+  s.bindir = 'bin'
 end
